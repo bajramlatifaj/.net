@@ -18,16 +18,16 @@ namespace DataAccess
 
 		public int Timeout = 30;
 
-		private string connectionString = "";
+		private string connectionString = "Data Source=SQL5106.site4now.net;Initial Catalog=db_a9baec_multitracks;User Id=db_a9baec_multitracks_admin;Password=MulT1Tr4acK5Adm1n";
 
 		public SQL(int timeout)
-			: this("admin")
+			: this("db_a9baec_multitracks_admin")
 		{
 			Timeout = timeout;
 		}
 
 		public SQL()
-			: this("admin")
+			: this("db_a9baec_multitracks_admin")
 		{
 		}
 
